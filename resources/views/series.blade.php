@@ -18,15 +18,15 @@
             <td>{{ $serie->title }}</td>
             <td>{{ $serie->publication_year }}</td>
             <td>
-              @foreach ($serie->authors as $author)
-                {{ $author->completeName() }} 
-              @endforeach
-            </td>
-            <td>
-              @foreach ($serie->genres as $genre)
-                {{ $genre->name }}
-              @endforeach
-            </td>
+                @foreach ($serie->authors as $author)
+                  {{ $author->completeName() }}
+                @endforeach
+              </td>
+              <td>
+                @foreach ($serie->genres as $genre)
+                  {{ $genre->name }}
+                @endforeach
+              </td>
             <td><form class="" action="/deleteserie" method="post">
               @csrf
               <input type="hidden" name="id" value="{{ $serie->id }}">

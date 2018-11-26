@@ -50,17 +50,17 @@ class View extends Controller
     public function deleteAuthor(Request $request)
     {
       $authors = \App\Author::all();
-      
+
       return view ('deleteauthor', [
         'authors' => $authors,
       ]);
     }
 
     public function deleteGenre(Request $request)
-    { 
-      
+    {
+
       $genres = \App\Genre::all();
-      
+
       return view ('deletegenre', [
         'genres' => $genres,
       ]);

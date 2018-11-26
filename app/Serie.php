@@ -12,6 +12,7 @@ class Serie extends Model
   }
   public function authors()
   {
-    return $this->belongsToMany('App\Author');
+    return $this->belongsToMany('App\Author'); //La méthode authors appartient à la table Author
+    // Le modèle permet de rendre accessible l'intérieur de la table en question
   }
 }

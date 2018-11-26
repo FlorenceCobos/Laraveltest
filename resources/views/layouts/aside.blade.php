@@ -7,6 +7,6 @@
   <li><a href="/deleteauthor">Supprimer un réalisateur</a></li>
   <li><a href="/deletegenre">Supprimer un genre</a></li>
 
-  
+
 
 </ul>

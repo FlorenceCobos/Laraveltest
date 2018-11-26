@@ -47,7 +47,7 @@ class Serie extends Controller
     {
         $author = new \App\Author;
         $author->first_name= $request->input('first_name');
-       
+
         $author->last_name = $request->input('last_name');
         $author->save();
         return redirect('/series');
@@ -70,7 +70,7 @@ class Serie extends Controller
         $author->delete($id);
         return redirect('/series');
     }
-   
+
     public function deleteGenre(Request $request)
     {
 
